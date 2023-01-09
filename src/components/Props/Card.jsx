@@ -4,18 +4,18 @@ import './Card.css'
 const Card = (props) => {
   return (
     <>
-      <div class="container">
-        <div class="card">
-          <div class="slide slide1">
-            <div class="content">
-              <div class="icon">
-                <i class="fa fa-user-circle" aria-hidden="true"></i>
+      <div className="container">
+        <div className="card">
+          <div className="slide slide1">
+            <div className="content">
+              <div className="icon">
+                <i className="fa fa-user-circle" aria-hidden="true"></i>
               </div>
             </div>
           </div>
 
-          <div class="slide slide2">
-            <div class="content">
+          <div className="slide slide2">
+            <div className="content">
               <h3>{props.h1}</h3>
 
               <p>{props.p}</p>

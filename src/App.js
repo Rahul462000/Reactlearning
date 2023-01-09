@@ -8,6 +8,9 @@ import {
 import add from "./components/Calc";
 import Card from "./components/Props/Card";
 import CardData from "./components/Props/CardArray";
+import SlotMachine from "./components/SlotMachine";
+import IncreDecre from "./components/Hooks/IncreDecre";
+import Time from "./components/Hooks/Time";
 
 // console.log() is a method that provide a data checking facility for ensuring data is called correctly or not
 // console.log(CardData[0]);
@@ -17,7 +20,7 @@ const App = () => {
   // map function method
   // const mapFunction = (val, ind, arr) => {
   //   return (
-  //   <Card h1={val.h1} 
+  //   <Card h1={val.h1}
   //   p={val.p} />
   //   );
   // };
@@ -38,8 +41,24 @@ const App = () => {
     cssStyle.color = "purple";
   }
 
+  // if-else in card components,
+
+  const favcard = "posterCard";
+  // const Condition = () => {
+  //   if (favcard === "posterCard") {
+  //     return (
+  //       <Card key={CardData[0].id} h1={CardData[0].h1} p={CardData[0].p} />
+  //     );
+  //   } else {
+  //     return (
+  //       <Card key={CardData[1].id} h1={CardData[1].h1} p={CardData[1].p} />
+  //     );
+  //   }
+  // };
+
   return (
     <>
+    <h1>This is a react practice programming phase!!</h1>
       <h1>
         Hello sir, <span style={cssStyle}> {greeting} </span>
       </h1>
@@ -64,12 +83,11 @@ const App = () => {
       // Card2
       <Card h1={CardData[1].h1} p={CardData[1].p} /> */}
 
-
       {/* their are two methods of map function calling */}
 
       {/* {CardData.map(mapFunction)}  old method */}
 
-      {CardData.map((val)=>{
+      {/* {CardData.map((val)=>{
         return(
           <Card 
           key={val.id}
@@ -77,7 +95,23 @@ const App = () => {
           p={val.p} />
         )
 
-      })}
+      })} */}
+
+      {/* ifelse condition statement practising */}
+      {/* <Condition /> */}
+
+      {/* ternary condition usage */}
+      {(favcard === 'posterCard')  ? <Card key={CardData[0].id} h1={CardData[0].h1} p={CardData[0].p} /> : <Card key={CardData[1].id} h1={CardData[1].h1} p={CardData[1].p} />  }
+
+      {/* a slot machine game for ifelse condition rendering */}
+      <SlotMachine />
+
+
+      {/* usestate Hook increment operator */}
+      <IncreDecre />
+
+      {/* usetate Hook useage for getting time */}
+      <Time />
     </>
   );
 };
