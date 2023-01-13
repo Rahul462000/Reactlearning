@@ -11,6 +11,9 @@ import CardData from "./components/Props/CardArray";
 import SlotMachine from "./components/SlotMachine";
 import IncreDecre from "./components/Hooks/IncreDecre";
 import Time from "./components/Hooks/Time";
+import Time2 from "./components/Hooks/Time2";
+import HandelingEvents from "./components/Hooks/HandelingEvents";
+import Form from "./components/Forms/Form";
 
 // console.log() is a method that provide a data checking facility for ensuring data is called correctly or not
 // console.log(CardData[0]);
@@ -58,7 +61,7 @@ const App = () => {
 
   return (
     <>
-    <h1>This is a react practice programming phase!!</h1>
+      <h1>This is a react practice programming phase!!</h1>
       <h1>
         Hello sir, <span style={cssStyle}> {greeting} </span>
       </h1>
@@ -101,17 +104,33 @@ const App = () => {
       {/* <Condition /> */}
 
       {/* ternary condition usage */}
-      {(favcard === 'posterCard')  ? <Card key={CardData[0].id} h1={CardData[0].h1} p={CardData[0].p} /> : <Card key={CardData[1].id} h1={CardData[1].h1} p={CardData[1].p} />  }
+      {favcard === "posterCard" ? (
+        <Card key={CardData[0].id} h1={CardData[0].h1} p={CardData[0].p} />
+      ) : (
+        <Card key={CardData[1].id} h1={CardData[1].h1} p={CardData[1].p} />
+      )}
 
       {/* a slot machine game for ifelse condition rendering */}
       <SlotMachine />
-
 
       {/* usestate Hook increment operator */}
       <IncreDecre />
 
       {/* usetate Hook useage for getting time */}
       <Time />
+      <br />
+      <br />
+
+      {/* Auto update time clock */}
+      <Time2 />
+
+      <br />
+      <br />
+      {/* Handeling events component */}
+      <HandelingEvents />
+
+      {/* handeling form events */}
+      <Form />
     </>
   );
 };

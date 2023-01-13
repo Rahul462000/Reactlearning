@@ -19,4 +19,4 @@ const Time = () => {
   )
 }
 
-export default Time
+export default Time;

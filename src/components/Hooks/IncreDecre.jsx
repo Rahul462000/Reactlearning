@@ -18,6 +18,7 @@ const Initi = () =>{
       <h2>{increment}</h2>
       <button onClick={IncrNum}>Click Me</button>
       {/* <button onClick={Initi}>Click Me</button> */}
+      
     </>
   );
 };
