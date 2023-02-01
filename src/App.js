@@ -14,6 +14,7 @@ import Time from "./components/Hooks/Time";
 import Time2 from "./components/Hooks/Time2";
 import HandelingEvents from "./components/Hooks/HandelingEvents";
 import Form from "./components/Forms/Form";
+import Todo from "./components/Hooks/Todo";
 
 // console.log() is a method that provide a data checking facility for ensuring data is called correctly or not
 // console.log(CardData[0]);
@@ -131,6 +132,9 @@ const App = () => {
 
       {/* handeling form events */}
       <Form />
+
+      {/* todo list project in react */}
+      <Todo />
     </>
   );
 };
