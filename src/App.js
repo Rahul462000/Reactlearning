@@ -5,16 +5,17 @@ import {
   multiplication,
   division,
 } from "./components/Calc";
-import add from "./components/Calc";
-import Card from "./components/Props/Card";
-import CardData from "./components/Props/CardArray";
-import SlotMachine from "./components/SlotMachine";
-import IncreDecre from "./components/Hooks/IncreDecre";
-import Time from "./components/Hooks/Time";
-import Time2 from "./components/Hooks/Time2";
-import HandelingEvents from "./components/Hooks/HandelingEvents";
-import Form from "./components/Forms/Form";
-import Todo from "./components/Hooks/Todo";
+// import add from "./components/Calc";
+// import Card from "./components/Props/Card";
+// import CardData from "./components/Props/CardArray";
+// import SlotMachine from "./components/SlotMachine";
+// import Time from "./components/Hooks/Time";
+// import Time2 from "./components/Hooks/Time2";
+// import HandelingEvents from "./components/Hooks/HandelingEvents";
+// import Form from "./components/Forms/Form";
+// import Todo from "./components/Hooks/Todo";
+// import PlusMinus from "./components/Hooks/PlusMinus";
+import NewTodo from "./components/Hooks/NewTodo";
 
 // console.log() is a method that provide a data checking facility for ensuring data is called correctly or not
 // console.log(CardData[0]);
@@ -29,25 +30,25 @@ const App = () => {
   //   );
   // };
 
-  let currDate = new Date();
-  currDate = currDate.getHours();
-  let greeting = "";
-  const cssStyle = {};
+  // let currDate = new Date();
+  // currDate = currDate.getHours();
+  // let greeting = "";
+  // const cssStyle = {};
 
-  if (currDate >= 1 && currDate < 12) {
-    greeting = "Good Morning";
-    cssStyle.color = "green";
-  } else if (currDate >= 12 && currDate < 19) {
-    greeting = "Good Afternoon";
-    cssStyle.color = "yellow";
-  } else {
-    greeting = "Good Evening";
-    cssStyle.color = "purple";
-  }
+  // if (currDate >= 1 && currDate < 12) {
+  //   greeting = "Good Morning";
+  //   cssStyle.color = "green";
+  // } else if (currDate >= 12 && currDate < 19) {
+  //   greeting = "Good Afternoon";
+  //   cssStyle.color = "yellow";
+  // } else {
+  //   greeting = "Good Evening";
+  //   cssStyle.color = "purple";
+  // }
 
   // if-else in card components,
 
-  const favcard = "posterCard";
+  // const favcard = "posterCard";
   // const Condition = () => {
   //   if (favcard === "posterCard") {
   //     return (
@@ -62,7 +63,7 @@ const App = () => {
 
   return (
     <>
-      <h1>This is a react practice programming phase!!</h1>
+      {/* <h1>This is a react practice programming phase!!</h1>
       <h1>
         Hello sir, <span style={cssStyle}> {greeting} </span>
       </h1>
@@ -72,7 +73,7 @@ const App = () => {
         <li>The subtraction of two number is: {subtraction(1, -2)}</li>
         <li>The multiplication of two number is: {multiplication(10, 4)}</li>
         <li>The division of two number is: {division(10, 4)}</li>
-      </ul>
+      </ul> */}
       {/* this is called props */}
       {/* <Card h1='hello i  rahul'
       p='keep moving ON'
@@ -105,36 +106,34 @@ const App = () => {
       {/* <Condition /> */}
 
       {/* ternary condition usage */}
-      {favcard === "posterCard" ? (
+      {/* {favcard === "posterCard" ? (
         <Card key={CardData[0].id} h1={CardData[0].h1} p={CardData[0].p} />
       ) : (
         <Card key={CardData[1].id} h1={CardData[1].h1} p={CardData[1].p} />
-      )}
+      )} */}
 
       {/* a slot machine game for ifelse condition rendering */}
-      <SlotMachine />
-
-      {/* usestate Hook increment operator */}
-      <IncreDecre />
+      {/* <SlotMachine /> */}
 
       {/* usetate Hook useage for getting time */}
-      <Time />
-      <br />
-      <br />
+      {/* <Time /> */}
 
       {/* Auto update time clock */}
-      <Time2 />
-
-      <br />
-      <br />
+      {/* <Time2 /> */}
       {/* Handeling events component */}
-      <HandelingEvents />
+      {/* <HandelingEvents /> */}
 
       {/* handeling form events */}
-      <Form />
+      {/* <Form /> */}
 
       {/* todo list project in react */}
-      <Todo />
+      {/* <Todo /> */}
+
+      {/* incemrent and decrement state changeing in react */}
+      {/* <PlusMinus /> */}
+
+      {/* new type of todo list inreact with material ui framework */}
+      <NewTodo />
     </>
   );
 };
