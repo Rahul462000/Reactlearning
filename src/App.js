@@ -5,6 +5,9 @@ import {
   multiplication,
   division,
 } from "./components/Calc";
+// import Page from "./components/UseEffcetHook/Page";
+import ComA from "./components/Projects/Pokemon/ComA";
+// import CompA from "./components/ContextApi/CompA";
 // import add from "./components/Calc";
 // import Card from "./components/Props/Card";
 // import CardData from "./components/Props/CardArray";
@@ -15,7 +18,9 @@ import {
 // import Form from "./components/Forms/Form";
 // import Todo from "./components/Hooks/Todo";
 // import PlusMinus from "./components/Hooks/PlusMinus";
-import NewTodo from "./components/Hooks/NewTodo";
+// import NewTodo from "./components/Hooks/NewTodo";
+// import Accordian from "./components/Projects/Accordian";
+// import GoogleKeep from "./components/Projects/GoogleKeepClone/GoogleKeep";
 
 // console.log() is a method that provide a data checking facility for ensuring data is called correctly or not
 // console.log(CardData[0]);
@@ -133,7 +138,22 @@ const App = () => {
       {/* <PlusMinus /> */}
 
       {/* new type of todo list inreact with material ui framework */}
-      <NewTodo />
+      {/* <NewTodo /> */}
+
+      {/* accordian in ract project */}
+      {/* <Accordian /> */}
+
+      {/* google keep clone project in react */}
+      {/* <GoogleKeep /> */}
+
+      {/* implementation of context api */}
+      {/* <CompA /> */}
+
+      {/* usage of useEffct hook in react */}
+      {/* <Page /> */}
+      {/* pokemon project */}
+      <ComA />
+
     </>
   );
 };
