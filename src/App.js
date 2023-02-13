@@ -2,7 +2,7 @@ import React from "react";
 import {
   addition,
   subtraction,
-  multiplication,
+  multiplication, 
   division,
 } from "./components/Calc";
 // import Page from "./components/UseEffcetHook/Page";
